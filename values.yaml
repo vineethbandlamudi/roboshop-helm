@@ -1,2 +1,5 @@
 containerPort: 8080
 serviceType: ClusterIP
+
+db_job:
+  enabled: false
