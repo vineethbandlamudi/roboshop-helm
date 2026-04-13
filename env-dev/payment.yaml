@@ -1,3 +1,4 @@
+env: dev
 appName: payment
 configMap_data:
   CART_HOST: cart
@@ -7,3 +8,11 @@ configMap_data:
   AMQP_HOST: rabbitmq-dev.vdevops.io
   AMQP_USER: roboshop
   AMQP_PASS: "roboshop123"
+
+resources:
+  requests:
+    memory: "64Mi"
+    cpu: "50m"
+  limits:
+    memory: "128Mi"
+    cpu: "100m"

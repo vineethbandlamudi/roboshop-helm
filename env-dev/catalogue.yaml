@@ -1,3 +1,4 @@
+env: dev
 appName: catalogue
 configMap_data:
   MONGO: true
@@ -12,3 +13,11 @@ db_job:
   ext: js
   jobs:
     - master-data
+
+resources:
+  requests:
+    memory: "64Mi"
+    cpu: "32m"
+  limits:
+    memory: "128Mi"
+    cpu: "100m"
